@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib> 
 #include <unistd.h>
 using namespace std;
 
@@ -22,7 +23,7 @@ bool isValid(int grid[SIZE][SIZE], int row, int col, int num) {
 }
 
 void printGrid(int grid[SIZE][SIZE]) {
-    system("clear"); // For Windows, use "cls"
+    system("cls"); // For Unix-like systems, use "clear"
     for (int row = 0; row < SIZE; row++) {
         for (int col = 0; col < SIZE; col++) {
             cout << grid[row][col] << " ";
